@@ -1,0 +1,271 @@
+.menu {
+    position: relative;
+    background-color: #e0e0e0;
+    border: 5px outset;
+    border-color: crimson;
+    display: block;
+    border-radius: 15%;
+    width: 150px;
+    height: 50px;
+    color: darkslateblue;
+    font-size: 13.5px;
+    margin: 20px auto;
+    
+}
+
+#container {
+    background-color: lightblue;
+    text-align: center;
+    width: 480px;
+    margin: auto;
+    
+    height: 280px;
+    
+    -webkit-transition: height 0.7s;
+    -moz-transition: height 0.7s;
+    transition: height 0.7s;
+}
+
+#container.open {
+    height: 560px;
+    
+    -webkit-transition: height 0.7s;
+    -moz-transition: height 0.7s;
+    transition: height 0.7s;
+}
+
+.menu:hover span::after {
+    content: "\00bb";
+    transition: 0.5s;
+}
+
+.menu:active {
+    font-size: 12px;
+    background-color: #c0c0c0;
+}
+
+#a {
+    
+}
+
+#b {
+    
+}
+
+#car {
+    
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -50%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes slidein3 {
+  from {
+    margin-left: -150%;
+  }
+
+  to {
+    margin-left: 50%;
+  }
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: aliceblue;
+}
+
+/*#calc-container {
+    background: lightBlue;
+    position: relative;
+    left: 100px;
+    bottom: 282px;
+    width: 1000px;
+    height: 550px;
+    border: 2px solid black;
+    border-radius: 4px;
+}*/
+
+#calc {
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    bottom: 210px;
+    right: 1000px;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 255, 0.2), 0 10px 24px 0 rgba(0, 0, 255, 0.19);
+    
+    -webkit-transition: right 0.7s;
+    -moz-transition: right 0.7s;
+    transition: right 0.7s;
+}
+
+#calc.on {
+    right: 0px;
+    -webkit-transition: right 0.7s;
+    -moz-transition: right 0.7s;
+    transition: right 0.7s;
+}
+
+#convert {
+    position: relative;
+    margin: 0 auto;
+    bottom: 730px;
+    left: 1000px;
+    width: 320px;
+    height: 520px;
+    background-color: #3333ff;
+    
+    -webkit-transition: left 0.7s;
+    -moz-transition: left 0.7s;
+    transition: left 0.7s;
+}
+
+#convert.on {
+    left: 0px;
+    -webkit-transition: left 0.7s;
+    -moz-transition: left 0.7s;
+    transition: left 0.7s;
+}
+
+#calc-back {
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+#conv-back {
+    border: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+}
+
+#result {
+    height: 120px;
+    
+}
+
+#keys {
+    height: 400px;
+}
+
+#history {
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+#output {
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+.operator, .number, .empty {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.number, .empty {
+    background-color: #eaedef;
+}
+
+.number, .operator {
+    curser: pointer;
+}
+
+.number:active, .operator:active {
+    font-size: 13px;
+}
+
+.number:focus, .operator:focus, .empty:focus, .menu:focus {
+    outline: 0;
+}
+
+button:nth-child(4) {
+    font-size: 20px;
+    background-color: #20b2aa;
+}
+
+button:nth-child(8) {
+    font-size: 20px;
+    background-color: #ffa500;
+}
+
+button:nth-child(12) {
+    font-size: 20px;
+    background-color: #f08080;
+}
+
+button:nth-child(16) {
+    font-size: 20px;
+    background-color: #7d93e0;
+}
+
+button:nth-child(20) {
+    font-size: 20px;
+    background-color: #9477af;
+}
+
+input[type=text] {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    font-size: 20px;
+    font-family: Monospace;
+    border: 1px solid lightBlue;
+    border-radius: 6px;
+}
+
+input[type=button] {
+    background: black;
+    width: 20%;
+    font-family: Monospace;
+    font-size: 20px;
+    font-weight: 900;
+    color: white;
+    margin: 2%;
+    border-radius: 50%;
+}
