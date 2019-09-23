@@ -1,0 +1,15 @@
+{
+    "name": "Super Stats Calculator",
+    "version": "0.1",
+    "manifest_version": 2,
+    "description": "Calculator for complicated Statistics formulas",
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    
+    },
+    "icons": {
+        "128": "128icon.png"
+    }
+}
